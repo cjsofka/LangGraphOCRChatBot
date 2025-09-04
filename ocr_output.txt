@@ -1,0 +1,49 @@
+3-6. Programmable logic controllers
+‘The recommended controller for SCADA systems is the programmable logic controller (PLC). PLCs are
+‘general-purpose microprocessor based controllers that provide logic, timing, counting, and analog control
+with network communications capability,
+
+a. PLCs are recommended for the following reasons:
+
+(1) They were developed for the factory floor and have demonstrated high reliability and tolerance
+for heat, vibration, and electromagnetic interference.
+
+(2) Their widespread market penetration means that parts are readily available and programming
+and technical support services are available from a large number of control system integrators.
+
+(3) They provide
+applications
+
+h speed processing, which is important in generator and switchgear control
+
+(4) They support hot standby and triple-redundant configurations for high reliability applications,
+
+b. APLC consists of the required quantities of the following types of modules or cards, mounted on a
+‘common physical support and electrical interconnection structure known as a rack. A ty
+configuration is shown in figure 3-4
+
+(1) Power supply: The power supply converts facility electrical distribution voltage, such as 120
+VAC or 125 VDC to signal level voltage used by the processor and other modules.
+
+(2) Processor: The processor module contains the microprocessor that performs control functions
+and computations, as well as the memory required to store the program,
+
+(3) Input/Output (1/0): These modules provide the means of connecting the processor to the field *
+devices.
+
+(4) Communications: Communications modules are available for a wide range of industry-standard
+‘communication network connections. These allow digital data transfer between PLCs and to other sys
+tems within the facility. Some PLCs have communications capability built-in to the processor, rather than
+using separate modules.
+
+(5) Communication Media and Protocols: ‘The most common communication media used are cop-
+per-wire, coaxial, fiber-optics, and wireless. The most common “open” communication protocols are
+Ethemet, Ethernev/IP, and DeviceNet. “Open” systems generally provide “plug and play” features in
+hich the system software automatically recognizes and communicates to any compatible device that is
+connected to it. Other widely accepted open protocols are Modbus, Profibus, and ControlNet.
+
+(6) Redundancy: Many PLCs are capable of being configured for redundant operation in which one
+processor backs up another. This arrangement often requires the addition of a redundancy module, which
+provides status confirmation and control assertion between the processors. In addition, signal wiring to
+redundant racks is an option.
+

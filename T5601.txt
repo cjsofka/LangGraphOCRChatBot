@@ -1,0 +1,69 @@
+3-5. 
+Types of distributed control systems 
+    a. Plant distributed control system (DCS): While the term DCS applies in general to any system in 
+which controllers are distributed rather than centralized, in the power generation and petrochemical proc
+ess industries it has come to refer to a specific type of control system able to execute complex analog 
+process control algorithms at high speed, as well as provide routine monitoring, reporting and data log
+ging functions. In most applications, the input and output modules of the system are distributed through
+out the facility, but the control processors themselves are centrally located in proximity to the control 
+room. These systems typically use proprietary hardware, software and communication protocols, requir
+ing that both replacement parts and technical support be obtained from the original vendor.   
+    b. Direct digital control (DDC): DDC systems are used in the commercial building heating, ventilation 
+and air conditioning (HVAC) industry to monitor and maintain environmental conditions. They consist of 
+local controllers connected to a network with a personal computer (PC) based central station which pro
+vides monitoring, reporting, data storage and programming capabilities. The controllers are optimized for 
+economical HVAC system control, which generally does not require fast execution speeds. Their hard
+ware and control software are proprietary, with either proprietary or open protocols used for network 
+communication. 
+    c. Remote terminal unit (RTU) based SCADA: RTU-based systems are common in the electric, gas and 
+water distribution industries where monitoring and control must take place across large geographical dis
+tances. The RTUs were developed primarily to provide monitoring and control capability at unattended 
+sites such as substations, metering stations, pump stations, and water towers. They communicate with a 
+central station over telephone lines, fiber-optics, radio or microwave transmission. Monitored sites tend to 
+be relatively small, with the RTU typically used mainly for monitoring and only limited control. Hard
+ware and software are proprietary, with either proprietary or open protocols used for data transmission to 
+the central station.  
+    d. Programmable logic controller (PLC) based systems: PLCs, which are described in greater detail in 
+the next section, can be networked together to share data as well as provide centralized monitoring and 
+control capability. Control systems consisting of networked PLCs are supplanting both the plant DCS and 
+the RTU-based systems in many industries. They were developed for factory automation and have tradi
+tionally excelled at high speed discrete control, but have now been provided with analog control capabil
+ity as well. Hardware for these systems is proprietary, but both control software and network communica
+tion protocols are open, allowing system configuration, programming and technical support for a particu
+lar manufacturer’s equipment to be obtained from many sources.  
+3-4 
+TM 5-601 
+3-6. Programmable logic controllers 
+The recommended controller for SCADA systems is the programmable logic controller (PLC).  PLCs are 
+general-purpose microprocessor based controllers that provide logic, timing, counting, and analog control 
+with network communications capability.   
+a. PLCs are recommended for the following reasons: 
+(1)  They were developed for the factory floor and have demonstrated high reliability and tolerance 
+for heat, vibration, and electromagnetic interference. 
+(2) Their widespread market penetration means that parts are readily available and programming 
+and technical support services are available from a large number of control system integrators. 
+(3) They provide high speed processing, which is important in generator and switchgear control 
+applications. 
+(4) They support hot standby and triple-redundant configurations for high reliability applications. 
+b. A PLC consists of the required quantities of the following types of modules or cards, mounted on a 
+common physical support and electrical interconnection structure known as a rack.  A typical PLC rack 
+configuration is shown in figure 3-4. 
+(1) Power supply: The power supply converts facility electrical distribution voltage, such as 120 
+VAC or 125 VDC to signal level voltage used by the processor and other modules. 
+(2) Processor: The processor module contains the microprocessor that performs control functions 
+and computations, as well as the memory required to store the program. 
+(3) Input/Output (I/O): These modules provide the means of connecting the processor to the field 
+devices. 
+(4) Communications: Communications modules are available for a wide range of industry-standard 
+communication network connections.  These allow digital data transfer between PLCs and to other sys
+tems within the facility.  Some PLCs have communications capability built-in to the processor, rather than 
+using separate modules. 
+(5) Communication Media and Protocols:  The most common communication media used are cop
+per-wire, coaxial, fiber-optics, and wireless.  The most common “open” communication protocols are 
+Ethernet, Ethernet/IP, and DeviceNet.  “Open” systems generally provide “plug and play” features in 
+which the system software automatically recognizes and communicates to any compatible device that is 
+connected to it.  Other widely accepted open protocols are Modbus, Profibus, and ControlNet. 
+(6) Redundancy: Many PLCs are capable of being configured for redundant operation in which one 
+processor backs up another.  This arrangement often requires the addition of a redundancy module, which 
+provides status confirmation and control assertion between the processors.  In addition, signal wiring to 
+redundant racks is an option.
